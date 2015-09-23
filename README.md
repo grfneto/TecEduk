@@ -1,5 +1,13 @@
 # ProjetoUFPE
 
+Nome do Projeto: TecEduk
+Cliente: Bruno Arruda ( Gestor escolar )
+Equipe: Djailson Assis
+	 Fernando Neves
+	 Gerson Ramos
+	 Jonatas Nascimento
+
+
 
 Sobre o projeto
 
