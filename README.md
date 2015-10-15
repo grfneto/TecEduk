@@ -11,11 +11,11 @@ Equipe: Djailson Assis
 
 Sobre o projeto:
 
-<<<<<<< HEAD
+
 Proporcionar processos informatizados inovadores na rede educacional Pernambucana, 
 afim de melhorar sua eficiência no ensino, como também melhorar o índice de desenvolvimento da educação básica. 
 Exemplo: IDEP
-=======
+
 Proporcionar processos informatizados inovadores na rede educacional Pernambucana, afim de melhorar sua eficiência no ensino, como também melhorar o índice de desenvolvimento da educação básica. Exemplo: IDEP
 >>>>>>> origin/master
 
