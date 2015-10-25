@@ -1,14 +1,14 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Customers</h1>
+<h1>Lista de Alunos</h1>
 
 <table>
   <thead>
     <tr>
-      <th>Nome</th>
-      <th>Rg</th>
+      <th>Nome Completo</th>
+      <th>Registro Geral</th>
       <th>Turma</th>
-      <th>Obs</th>
+      <th>Observações</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -20,9 +20,9 @@
         <td><%= customer.rg %></td>
         <td><%= customer.turma %></td>
         <td><%= customer.obs %></td>
-        <td><%= link_to 'Show', customer %></td>
-        <td><%= link_to 'Edit', edit_customer_path(customer) %></td>
-        <td><%= link_to 'Destroy', customer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Detalhes', customer %></td>
+        <td><%= link_to 'Editar', edit_customer_path(customer) %></td>
+        <td><%= link_to 'Apagar', customer, method: :delete, data: { confirm: 'Deseja apagar o registro do aluno #{customer.nome}?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -30,4 +30,4 @@
 
 <br>
 
-<%= link_to 'New Customer', new_customer_path %>
+<%= link_to 'Novo cadastro', new_customer_path %>
