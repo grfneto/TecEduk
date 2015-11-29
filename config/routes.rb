@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
+  resources :funcionarios
   resources :customers
   root :to => 'home#index'
-  get 'alunos' => 'customers#index'
   
   
   # The priority is based upon order of creation: first created -> highest priority.
