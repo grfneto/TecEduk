@@ -46,8 +46,9 @@
             <input type="checkbox" value="remember-me"> Lembrar dados
           </label>
         </div>
+        <%= link_to '<button type="button" class="btn btn-primary"><i class="fa fa-clipboard"></i> Cadastre-se </button>'.html_safe, customers_path %>
         <button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>
-        <%= link_to '<button type="button" class="btn btn-primary"><i class="fa fa-clipboard"></i> Tela de cadastro</button>'.html_safe, customers_path %>
+        
       </form>
 
     </div> <!-- /container -->
