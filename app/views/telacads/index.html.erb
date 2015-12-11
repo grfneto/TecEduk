@@ -1,27 +1,16 @@
+<table>
 <p id="notice"><%= notice %></p>
 
 <h1>Escolha o tipo de cadastro</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Nome</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-<%= link_to "Cadastrar Aluno", customers_path,style:"background-color:transparent" %>
-  <tbody>
-    <% @telacads.each do |telacad| %>
-      <tr>
-        <td><%= telacad.nome %></td>
-        <td><%= link_to 'Show', telacad %></td>
-        <td><%= link_to 'Edit', edit_telacad_path(telacad) %></td>
-        <td><%= link_to 'Destroy', telacad, method: :delete, data: { confirm: 'Você realmente deseja apagar?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+<div class="panel panel-primary">
+  <div class="panel-heading"><h2>Lista de opções</h2></div>
+    
+      
+    </table>
+
+</div>
 
 <br>
 
-<%= link_to 'Novo cadastro', new_telacad_path %>
+<%= link_to '<button type="button" class="btn btn-primary"><i class="fa fa-user"></i> Novo Cadastro</button>'.html_safe, new_telacad_path %>
