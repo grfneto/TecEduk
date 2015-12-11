@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
+  resources :telacads
   resources :funcionarios
   resources :customers
-  resources :telacad
+  resources :telacads
   root :to => 'home#index'
   
   
