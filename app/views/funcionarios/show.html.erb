@@ -1,14 +1,14 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
-  <%= @funcionario.name %>
+  <strong>Nome:</strong>
+  <%= @funcionario.nome %>
 </p>
 
 <p>
-  <strong>Login:</strong>
-  <%= @funcionario.login %>
+  <strong>Email:</strong>
+  <%= @funcionario.email %>
 </p>
 
-<%= link_to 'Edit', edit_funcionario_path(@funcionario) %> |
-<%= link_to 'Back', funcionarios_path %>
+<%= link_to 'Editar', edit_funcionario_path(@funcionario) %> |
+<%= link_to 'Voltar', funcionarios_path %>
