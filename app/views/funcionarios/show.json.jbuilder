@@ -1,1 +1,1 @@
-json.extract! @funcionario, :id, :name, :login, :created_at, :updated_at
+json.extract! @funcionario, :id, :nome, :email, :created_at, :updated_at

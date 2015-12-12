@@ -16,9 +16,9 @@
       <tr>
         <td><%= funcionario.nome %></td>
         <td><%= funcionario.email %></td>
-        <td><%= link_to 'Show', funcionario %></td>
-        <td><%= link_to 'Edit', edit_funcionario_path(funcionario) %></td>
-        <td><%= link_to 'Destroy', funcionario, method: :delete, data: { confirm: 'Você tem certeza que deseja apagar?' } %></td>
+        <td><%= link_to 'Mostar', funcionario %></td>
+        <td><%= link_to 'Editar', edit_funcionario_path(funcionario) %></td>
+        <td><%= link_to 'Deletar', funcionario, method: :delete, data: { confirm: 'Você tem certeza que deseja apagar?' } %></td>
       </tr>
     <% end %>
   </tbody>
