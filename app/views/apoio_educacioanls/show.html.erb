@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @apoio_educacioanl.nome %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @apoio_educacioanl.email %>
+</p>
+
+<p>
+  <strong>Senha:</strong>
+  <%= @apoio_educacioanl.senha %>
+</p>
+
+<p>
+  <strong>Confirmar senha:</strong>
+  <%= @apoio_educacioanl.confirmar_senha %>
+</p>
+
+<%= link_to 'Edit', edit_apoio_educacioanl_path(@apoio_educacioanl) %> |
+<%= link_to 'Back', apoio_educacioanls_path %>

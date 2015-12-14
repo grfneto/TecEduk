@@ -1,0 +1,33 @@
+<%= form_for(@apoio_educacioanl) do |f| %>
+  <% if @apoio_educacioanl.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@apoio_educacioanl.errors.count, "error") %> prohibited this apoio_educacioanl from being saved:</h2>
+
+      <ul>
+      <% @apoio_educacioanl.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nome %><br>
+    <%= f.text_field :nome %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br>
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :senha %><br>
+    <%= f.text_field :senha %>
+  </div>
+  <div class="field">
+    <%= f.label :confirmar_senha %><br>
+    <%= f.text_field :confirmar_senha %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

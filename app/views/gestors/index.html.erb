@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Gestors</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Email</th>
+      <th>Senha</th>
+      <th>Confirmar senha</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @gestors.each do |gestor| %>
+      <tr>
+        <td><%= gestor.nome %></td>
+        <td><%= gestor.email %></td>
+        <td><%= gestor.senha %></td>
+        <td><%= gestor.confirmar_senha %></td>
+        <td><%= link_to 'Show', gestor %></td>
+        <td><%= link_to 'Edit', edit_gestor_path(gestor) %></td>
+        <td><%= link_to 'Destroy', gestor, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Gestor', new_gestor_path %>

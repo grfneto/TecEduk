@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :gestors
+  resources :apoio_educacioanls
+  resources :professors
   resources :telacads
   resources :funcionarios
   resources :customers

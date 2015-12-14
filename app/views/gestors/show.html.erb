@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @gestor.nome %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @gestor.email %>
+</p>
+
+<p>
+  <strong>Senha:</strong>
+  <%= @gestor.senha %>
+</p>
+
+<p>
+  <strong>Confirmar senha:</strong>
+  <%= @gestor.confirmar_senha %>
+</p>
+
+<%= link_to 'Edit', edit_gestor_path(@gestor) %> |
+<%= link_to 'Back', gestors_path %>
