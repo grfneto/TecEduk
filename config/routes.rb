@@ -3,9 +3,7 @@ Rails.application.routes.draw do
   resources :apoio_educacioanls
   resources :professors
   resources :telacads
-  resources :funcionarios
   resources :customers
-  resources :telacads
   root :to => 'home#index'
   
   

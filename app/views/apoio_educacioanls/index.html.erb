@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Apoio Educacioanls</h1>
+<h1>Apoio Educacioanal</h1>
 
 <table>
   <thead>
@@ -20,9 +20,9 @@
         <td><%= apoio_educacioanl.email %></td>
         <td><%= apoio_educacioanl.senha %></td>
         <td><%= apoio_educacioanl.confirmar_senha %></td>
-        <td><%= link_to 'Show', apoio_educacioanl %></td>
-        <td><%= link_to 'Edit', edit_apoio_educacioanl_path(apoio_educacioanl) %></td>
-        <td><%= link_to 'Destroy', apoio_educacioanl, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Mostrar', apoio_educacioanl %></td>
+        <td><%= link_to 'Editar', edit_apoio_educacioanl_path(apoio_educacioanl) %></td>
+        <td><%= link_to 'Apagar', apoio_educacioanl, method: :delete, data: { confirm: 'Você tem certeza que deseja apagar?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -30,4 +30,4 @@
 
 <br>
 
-<%= link_to 'New Apoio educacioanl', new_apoio_educacioanl_path %>
+<%= link_to 'Cadastrar Apoio educacioanl', new_apoio_educacioanl_path %>

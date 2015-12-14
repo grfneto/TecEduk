@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Professors</h1>
+<h1>Lista de Professores</h1>
 
 <table>
   <thead>
@@ -20,9 +20,9 @@
         <td><%= professor.email %></td>
         <td><%= professor.senha %></td>
         <td><%= professor.confirmar_senha %></td>
-        <td><%= link_to 'Show', professor %></td>
-        <td><%= link_to 'Edit', edit_professor_path(professor) %></td>
-        <td><%= link_to 'Destroy', professor, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Mostrar', professor %></td>
+        <td><%= link_to 'Editar', edit_professor_path(professor) %></td>
+        <td><%= link_to 'Apagar', professor, method: :delete, data: { confirm: 'Você tem certeza que deseja apagar?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -30,4 +30,4 @@
 
 <br>
 
-<%= link_to 'New Professor', new_professor_path %>
+<%= link_to 'Cadastrar Professor', new_professor_path %>

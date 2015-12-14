@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Gestors</h1>
+<h1>Gestor Atual</h1>
 
 <table>
   <thead>
@@ -20,9 +20,9 @@
         <td><%= gestor.email %></td>
         <td><%= gestor.senha %></td>
         <td><%= gestor.confirmar_senha %></td>
-        <td><%= link_to 'Show', gestor %></td>
-        <td><%= link_to 'Edit', edit_gestor_path(gestor) %></td>
-        <td><%= link_to 'Destroy', gestor, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Mostrar', gestor %></td>
+        <td><%= link_to 'Editar', edit_gestor_path(gestor) %></td>
+        <td><%= link_to 'Apagar', gestor, method: :delete, data: { confirm: 'Você realmente deseja apagar?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -30,4 +30,4 @@
 
 <br>
 
-<%= link_to 'New Gestor', new_gestor_path %>
+<%= link_to 'Cadastrar Novo Gestor', new_gestor_path %>
