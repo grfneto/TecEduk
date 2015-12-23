@@ -28,7 +28,7 @@ class GestorsController < ApplicationController
 
     respond_to do |format|
       if @gestor.save
-        format.html { redirect_to @gestor, notice: 'Gestor was successfully created.' }
+        format.html { redirect_to @gestor, notice: 'Gestor foi cadastrado com sucesso !' }
         format.json { render :show, status: :created, location: @gestor }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class GestorsController < ApplicationController
   def update
     respond_to do |format|
       if @gestor.update(gestor_params)
-        format.html { redirect_to @gestor, notice: 'Gestor was successfully updated.' }
+        format.html { redirect_to @gestor, notice: 'Gestor foi atualizado com sucesso !' }
         format.json { render :show, status: :ok, location: @gestor }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class GestorsController < ApplicationController
   def destroy
     @gestor.destroy
     respond_to do |format|
-      format.html { redirect_to gestors_url, notice: 'Gestor was successfully destroyed.' }
+      format.html { redirect_to gestors_url, notice: 'Gestor foi excluído com sucesso !' }
       format.json { head :no_content }
     end
   end

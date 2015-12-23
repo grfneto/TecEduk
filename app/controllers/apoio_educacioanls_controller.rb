@@ -28,7 +28,7 @@ class ApoioEducacioanlsController < ApplicationController
 
     respond_to do |format|
       if @apoio_educacioanl.save
-        format.html { redirect_to @apoio_educacioanl, notice: 'Apoio educacioanl was successfully created.' }
+        format.html { redirect_to @apoio_educacioanl, notice: 'Apoio educacioanal foi cadastrado com Sucesso !' }
         format.json { render :show, status: :created, location: @apoio_educacioanl }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class ApoioEducacioanlsController < ApplicationController
   def update
     respond_to do |format|
       if @apoio_educacioanl.update(apoio_educacioanl_params)
-        format.html { redirect_to @apoio_educacioanl, notice: 'Apoio educacioanl was successfully updated.' }
+        format.html { redirect_to @apoio_educacioanl, notice: 'Apoio educacioanal foi atualizado com Sucesso !' }
         format.json { render :show, status: :ok, location: @apoio_educacioanl }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class ApoioEducacioanlsController < ApplicationController
   def destroy
     @apoio_educacioanl.destroy
     respond_to do |format|
-      format.html { redirect_to apoio_educacioanls_url, notice: 'Apoio educacioanl was successfully destroyed.' }
+      format.html { redirect_to apoio_educacioanls_url, notice: 'Apoio educacioanal foi excluído com Sucesso !' }
       format.json { head :no_content }
     end
   end

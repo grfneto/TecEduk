@@ -7,9 +7,7 @@
     <tr>
       <th>Nome</th>
       <th>Email</th>
-      <th>Senha</th>
-      <th>Confirmar senha</th>
-      <th colspan="3"></th>
+       <th colspan="3"></th>
     </tr>
   </thead>
 
@@ -18,9 +16,7 @@
       <tr>
         <td><%= gestor.nome %></td>
         <td><%= gestor.email %></td>
-        <td><%= gestor.senha %></td>
-        <td><%= gestor.confirmar_senha %></td>
-        <td><%= link_to 'Mostrar', gestor %></td>
+         <td><%= link_to 'Mostrar', gestor %></td>
         <td><%= link_to 'Editar', edit_gestor_path(gestor) %></td>
         <td><%= link_to 'Apagar', gestor, method: :delete, data: { confirm: 'Você realmente deseja apagar?' } %></td>
       </tr>
