@@ -1,9 +1,0 @@
-A entrega da iteração 0 foi incialmente entregue via email ao porofessor, 
-porem depois o professor informou que tudo deveria ser apostado apenas
-no repositorio!
-
-OBS.: Nossa entrega foi feita no prazo, mas por falta de informações concretas
-foi enviado para o email do professor no repositorio do google drive.
-
-Como meio de comprovação estou enviando alguns prints para deixar claro
-para as partes interessadas.
